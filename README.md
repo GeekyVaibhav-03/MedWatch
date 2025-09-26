@@ -29,17 +29,20 @@ A modern, responsive healthcare dashboard for infection control and patient moni
 ### Installation
 
 1. Clone the repository
+
 ```bash
 git clone https://github.com/yourusername/medwatch-dashboard.git
 cd medwatch-dashboard
 ```
 
 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 3. Start the development server
+
 ```bash
 npm run dev
 ```
