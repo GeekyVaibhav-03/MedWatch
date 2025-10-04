@@ -1,5 +1,7 @@
 import React from "react";
 import { GitBranch, Clock, MapPin } from "lucide-react";
+import ContactNetworkGraph from "./ContactNetworkGraph";
+import NetworkGraphDemo from "./NetworkGraphDemo";
 
 const PatientTracing = () => {
   return (
@@ -16,6 +18,9 @@ const PatientTracing = () => {
           </p>
         </div>
       </div>
+
+      {/* Network Graph Demo Section */}
+      <NetworkGraphDemo />
 
       {/* Search and Filters */}
       <div className="card">
@@ -34,21 +39,12 @@ const PatientTracing = () => {
         </div>
       </div>
 
-      {/* Interactive Network Graph Placeholder */}
+      {/* Interactive Network Graph */}
       <div className="card">
         <h3 className="text-lg font-medium text-gray-900 mb-4">
           Contact Network Graph
         </h3>
-        <div className="bg-gray-50 rounded-lg p-8 text-center h-96 flex items-center justify-center">
-          <div className="text-gray-500">
-            <GitBranch className="h-16 w-16 mx-auto mb-4" />
-            <p className="text-lg font-medium">Interactive Contact Network</p>
-            <p className="text-sm">
-              Select a patient to view their contact network and movement
-              history
-            </p>
-          </div>
-        </div>
+        <ContactNetworkGraph />
       </div>
 
       {/* Timeline and Patient Details */}
